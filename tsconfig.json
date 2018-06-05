@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "outDir": "build",
+    "rootDir": "src",
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "sourceRoot": "./src",
+    "strict": true,
+    "target": "es2015"
+  },
+  "exclude": [
+    "android",
+    "ios",
+    "index.android.js",
+    "index.ios.js",
+    "build",
+    "node_modules"
+  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    }
+  }
+}
