@@ -1,14 +1,6 @@
 import * as React from "react";
 const LottieView = require("lottie-react-native");
-import {
-  StyleSheet,
-  View,
-  Animated,
-  Dimensions,
-  Text,
-  TouchableOpacity,
-  ScrollView
-} from "react-native";
+import { StyleSheet, View, Animated, Dimensions } from "react-native";
 const windowSize = Dimensions.get("window");
 
 interface State {
@@ -61,7 +53,7 @@ class App extends React.Component<{}, State> {
     const { yolkAnimation, shellAnimation } = this.state;
 
     return (
-      <View style={styles.wave}>
+      <View style={styles.yolk}>
         <View
           style={{
             position: "absolute",
@@ -85,7 +77,7 @@ class App extends React.Component<{}, State> {
           />
         </View>
         <LottieView
-          style={styles.wave}
+          style={styles.yolk}
           source={require("../animations/egg.json")}
           progress={yolkAnimation}
           speed={1}
@@ -115,7 +107,7 @@ const styles = StyleSheet.create({
   page: {
     width: windowSize.width
   },
-  wave: {
+  yolk: {
     position: "absolute",
     left: 0,
     top: 0,

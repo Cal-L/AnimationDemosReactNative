@@ -4,7 +4,8 @@ import {
   StyleSheet,
   TouchableOpacity,
   Dimensions,
-  Text
+  Text,
+  SafeAreaView
 } from "react-native";
 import Planets from "./planets";
 import Tabs from "./tabs";
@@ -95,10 +96,10 @@ class App extends React.Component<{}, State> {
     const nav = this.renderNav();
 
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         {demo}
         {nav}
-      </View>
+      </SafeAreaView>
     );
   }
 }

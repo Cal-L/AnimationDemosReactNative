@@ -6,8 +6,7 @@ import {
   Animated,
   Dimensions,
   Text,
-  TouchableOpacity,
-  ScrollView
+  TouchableOpacity
 } from "react-native";
 const windowSize = Dimensions.get("window");
 
