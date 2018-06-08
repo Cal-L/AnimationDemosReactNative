@@ -30,12 +30,14 @@ class App extends React.Component<{}, State> {
     const { animationProgress } = this.state;
 
     return (
-      <LottieView
-        style={styles.wave}
-        source={require("../animations/wave.json")}
-        progress={animationProgress}
-        speed={1}
-      />
+      <View style={styles.wave}>
+        <LottieView
+          style={styles.wave}
+          source={require("../animations/wave.json")}
+          progress={animationProgress}
+          speed={1}
+        />
+      </View>
     );
   }
 

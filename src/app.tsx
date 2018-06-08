@@ -9,10 +9,11 @@ import {
 import Planets from "./planets";
 import Tabs from "./tabs";
 import Wave from "./wave";
+import Egg from "./egg";
 
 const windowSize = Dimensions.get("window");
 
-export type DemoName = "tabs" | "planets" | "wave";
+export type DemoName = "tabs" | "planets" | "wave" | "egg";
 
 export interface Demo {
   element: React.ComponentClass<any>;
@@ -33,6 +34,9 @@ const demos: Demos = {
   },
   wave: {
     element: Wave
+  },
+  egg: {
+    element: Egg
   }
 };
 
@@ -41,7 +45,7 @@ class App extends React.Component<{}, State> {
     super(props);
 
     this.state = {
-      activeDemo: "tabs"
+      activeDemo: "egg"
     };
   }
 
